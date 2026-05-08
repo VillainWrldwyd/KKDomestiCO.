@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KK DomestiCO | Cleaning Detergents Supplies</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Additional styles for the Cleaning Detergents page */
+    h4 {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 49%;
+      text-align: center;
+      margin-top: 2rem;
+      color: rgb(43, 43, 43);
+    } 
+
+    .hero {
+      background: linear-gradient(118deg, var(--color-dominant), var(--color-secondary));
+      color: white;
+      margin: 2rem auto;
+      max-width: 1200px;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-radius: 25px;
+    }
+
+    .cleaning-detergents {
+      display: flex;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+
+    .cleaning-detergents h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .products, .products1 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .product, .product1 {
+      background: var(--color-card-bg);
+      border-radius: 15px;
+      padding: 1rem;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product img, .product1 img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      justify-content: center;
+    }
+
+    .product h3, .product1 h3 {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .products p, .products1 p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+      background-color: var(--color-accent);
+      border-radius: 18px;
+    }
+</style>
+</head>
+<body>
+  <!-- Bubbles Background -->
+  <div class="bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!--Sparkles Background-->
+  <div class="sparkles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1><img src="KKDlogo.png" alt="✨KK DomestiCO"></h1>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>    
+  </header>
+
+  <!-- Navigation -->
+    <nav class="side-nav">
+      <ul>
+        <li><a href="kokeDomSite.html">KK DomestiCO</a></li>
+        <li><a href="#cleaning-detergents">WEEKLY PRODUCTS</a></li>
+        <li><a href="#products1">MONTHLY PRODUCTS</a></li>
+        <li><a href="index.html">Link Page</a></li>
+        <li><button id="modeToggle" class="toggle-btn"><i class="fas fa-moon"></i></button></li>
+       </ul>
+    </nav>
+    <div class="overlay"></div>
+
+
+
+  <!-- Main Content -->
+  <main>
+
+    <section class="hero">
+      <h2>Cleaning Detergents Supplies</h2>
+      <p>High-quality cleaning detergents for all your cleaning needs.</p>
+    </section>
+
+      <!--Weekly Products-->
+      <h4>Weekly Combo</h4>
+    <section class="cleaning-detergents">
+      <div class="products">
+
+        <div class="product">
+          <h3>5L Perfumed Pine Gel</h3>
+          <p>5L Perfumed Pine Gel- R120</p>
+        </div>
+
+        <div class="product">
+          <h3>5L Thick Bleach</h3>
+          <p>5L Thick Bleach- R350</p>
+        </div>
+
+        <div class="product">
+          <h3>5L Dish Washing Soap</h3>
+          <p>5L Dish Washing Soap- R350</p>
+        </div>
+
+        <div class="product">
+          <h3>5kg Duo Block</h3>
+          <p>5kg Duo Block - R350</p>
+        </div>
+
+        <div class="product">
+          <h3>2ply Tissues</h3>
+          <p>2ply Tissues - R350</p>
+        </div>
+
+
+
+      </div>
+    </section>
+  
+
+<!--Monthly Products-->
+<h4>Monthly Combo</h4>
+  <section class="cleaning-detergents">
+      <div class="products1">
+
+        <div class="product1">
+          <h3>20L Perfumed Pine Gel</h3>
+          <p>20L Perfumed Pine Gel - R350</p>
+        </div>
+
+        <div class="product1">
+          <h3>20L Thick Bleach</h3>
+          <p>20L Thick Bleach - R350</p>
+        </div>
+
+        <div class="product1">
+          <h3>20L Dish Washing Soap</h3>
+          <p>20L Dish Washing Soap - R350</p>
+        </div>
+
+        <div class="product1">
+          <h3>10kg Duo Block</h3>
+          <p>10kg Duo Block - R350</p>
+        </div>
+
+        <div class="product1">
+          <h3>2ply Tissues</h3>
+          <p>2ply Tissues - R350</p>
+        </div>
+
+
+
+      </div>
+    </section>
+  </main>
+<footer class="site-footer">
+  <p>&copy; 2018 KK DomestiCO. All rights reserved.</p>
+</footer>
+
+<!--Java Script-->
+<script>
+  // Nav  Menu Toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const sideNav = document.querySelector('.side-nav');
+  const overlay = document.querySelector('.overlay');
+
+  // Toggle menu
+  menuToggle.addEventListener('click', () => {
+    sideNav.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
+
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', () => {
+    sideNav.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+
+// Dark Mode Toggle
+const toggleBtn = document.getElementById("modeToggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "☀️ Light Mode";
+    localStorage.setItem("theme", "dark");
+  } else {
+    toggleBtn.textContent = "🌙 Dark Mode";
+    localStorage.setItem("theme", "light");
+  }
+});
+
+// Load saved preference
+window.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ Light Mode";
+  }
+});
+//** */
+
+</script>
+</body>
+</html>

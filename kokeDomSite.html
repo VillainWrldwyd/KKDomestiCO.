@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KK DomestiCO | High-Pitch Cleaning Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Loader animation -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+  <!-- Bubbles Background -->
+  <div class="bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!--Sparkles Background-->
+  <div class="sparkles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+  <!-- Header  adjust logo later-->
+  <header class="site-header skeleton">
+    <h1><img src="KKDlogo.png" class="logo" alt="✨KK DomestiCO"></h1>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+  </header> 
+
+    <!-- Navigation -->
+    <nav class="side-nav skeleton">
+      <ul>
+        <li><a href="CleaningDetergent.html">Cleaning Detergents</a></li>
+        <li><a href="#services-pricing">Services & Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><button id="modeToggle" class="toggle-btn"><i class="fas fa-moon"></i></button></li>
+      </ul>
+    </nav>
+    <div class="overlay"></div>
+
+    
+  <!-- Hero -->
+  <section class="hero skeleton">
+    <img src="cleaningEQP.jpg" alt="cleaning Equipment" class="hero-image">
+    <h1>IS CLEANING YOUR RESIDENCE/ OFFICE A HASSLE?</h1>
+    <p>Let us handle the cleaning while you focus on what matters most!</p>
+  </section>
+
+<!-- Ref.-->
+<section id="references" class="references skeleton">
+  <h2>Trusted By</h2>
+  <div class="carousel">
+
+    <div class="carousel-track">
+      <div class="carousel-item">
+        <img src="morganhofGolf.webp" alt="Morgenhof Golf Estate">
+      </div>
+
+      <div class="carousel-item">
+        <img src="thefallestate.webp" alt="The Falls Estate">
+      </div>
+
+      <div class="carousel-item">
+        <img src="chomanefun.png" alt="Chomane Funeral Services">
+      </div>
+
+      <div class="carousel-item">
+        <img src="selcourtestate.webp" alt="Selcourt Estate">
+      </div>
+
+    </div>
+    <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="carousel-dots"></div>
+  </div>
+</section>
+
+
+  <!-- Services -->
+<section id="services-pricing" class="services-pricing skeleton">
+  <h2>Services & Pricing</h2>
+  <div class="services-grid">
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-house"></i> House Cleaning
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> General cleaning of living spaces, kitchens, and bathrooms.</p>
+        <p><strong>Price:</strong> R150 per hour</p>
+        <button class="book-btn" data-service="House Cleaning">Book Now</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-broom"></i> Deep Cleaning
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> Thorough cleaning including carpets, windows, and hard-to-reach areas.</p>
+        <p><strong>Price:</strong> R500 per session</p>
+        <button class="book-btn" data-service="Deep Cleaning">Book Now</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-shirt"></i> Laundry
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> Washing, drying, and folding of clothes.</p>
+        <p><strong>Price:</strong> R1800 monthly package</p>
+        <button class="book-btn" data-service="Laundry">Book Now</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-building"></i> Office Cleaning
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> Professional cleaning for office spaces, desks, and common areas.</p>
+        <p><strong>Price:</strong> Custom quotes available</p>
+        <button class="book-btn" data-service="Office Cleaning">Book Now</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-home"></i> Move-in/Out
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> Professional cleaning for office spaces, desks, and common areas.</p>
+        <p><strong>Price:</strong> Custom quotes available</p>
+        <button class="book-btn" data-service="Move-in/Out">Book Now</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-broom"></i> Sanitization
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> Professional cleaning for office spaces, desks, and common areas.</p>
+        <p><strong>Price:</strong> Custom quotes available</p>
+        <button class="book-btn" data-service="Sanitization">Book Now</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-window-maximize"></i> Window Cleaning
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> Professional cleaning for office spaces, desks, and common areas.</p>
+        <p><strong>Price:</strong> Custom quotes available</p>
+        <button class="book-btn" data-service="Window Cleaning">Book Now</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <i class="fa-solid fa-soap"></i> Cleaning Detergents Supplies
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+      <div class="accordion-body">
+        <p><i class="fa-solid far fa-circle-dot"></i> Professional cleaning for office spaces, desks, and common areas.</p>
+        <p><strong>Price:</strong> Custom quotes available</p>
+        <button class="book-btn" data-service="Cleaning Detergents Supplies">Book Now</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Contact -->
+<section id="contact" class="contact skeleton">
+  <h2>Book a Cleaner</h2>
+  <form id="contactForm"action="https://formspree.io/f/mzdoaovq" method="POST">
+    <input type="text" name="name" id="name" placeholder="Your Name" required>
+    <input type="email" name="email" id="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required>
+
+    <!-- Service dropdown -->
+    <select name="service" id="service" required>
+      <option value="">Select a Service</option>
+      <option value="house">House Cleaning <p>(R350/hr)</p></option>
+      <option value="deep">Deep Cleaning <p>(R500/session)</p></option>
+      <option value="laundry">Laundry <p>(R1800/month)</p></option>
+      <option value="office">Office Cleaning <p>(customer quotes available)</p></option>
+      <option value="move">Move-in/out <p>(customer quotes available)</p></option>
+      <option value="sanitation">Sanitation <p>(R250/hr)</p></option>
+      <option value="windows">Window Cleaning <p>(R80/window)</p></option>
+      <option value="detergents">Cleaning Detergents Supplies <p>(customer quotes available)</p></option>
+    </select>
+    
+    <!-- Date picker -->
+    <input type="date" name="date" id="date" required>
+    
+    <!-- Time picker -->
+    <input type="time" name="time" id="time" required>
+    
+    <textarea placeholder="Additional Notes" name="message" id="message" rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="site-footer skeleton" >
+  <div class="footer-grid">
+    <!-- Column 1: Logo & Tagline -->
+    <div class="footer-brand">
+      <img src="KKDlogo.png" alt="KK DomestiCO" class="footer-logo">
+      <p>... Moto ...</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Booking</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Direct Call: 083 200 3520</p>
+      <p>WhatsApp: 083 230 4404</p>
+      <p>Email: Koketso.kkconsulting@gmail.com</p>
+      <p>Location: Johannesburg, Gauteng, South Africa</p>
+    </div>
+
+    <!-- Column 4: Social Media -->
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <a href="https://za.linkedin.com/in/koketso-nyakane-0237a47a"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/koketso.kubedi"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+      <a href="mailto:Koketso.kkconsulting@gmail.com"><i class="fab fa-envelope-square" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2018 KK DomestiCO. All Rights Reserved.</p>
+  </div>
+
+  <div class="scroll-top" id="scrollTopBtn">
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>
+</footer>
+
+
+
+
+
+<!--Java Script-->
+<script>
+
+  // Nav  Menu Toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const sideNav = document.querySelector('.side-nav');
+  const overlay = document.querySelector('.overlay');
+
+  // Toggle menu
+  menuToggle.addEventListener('click', () => {
+    sideNav.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
+
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', () => {
+    sideNav.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+  //** */
+
+  // Accordion functionality (Services & Pricing)
+  const headers = document.querySelectorAll('.accordion-header');
+
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const body = header.nextElementSibling;
+      const arrow = header.querySelector('.arrow');
+
+      // Toggle only this card
+      if (body.classList.contains('open')) {
+        body.classList.remove('open');
+        arrow.classList.remove('rotate');
+      } else {
+        body.classList.add('open');
+        arrow.classList.add('rotate');
+      }
+    });
+  });
+
+  // Book Now buttons
+  const bookButtons = document.querySelectorAll('.book-btn');
+  const serviceSelect = document.querySelector('select[name="Service"]');
+
+  bookButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const service = btn.getAttribute('data-service');
+      if (serviceSelect) {
+        serviceSelect.value = service.toLowerCase();
+      }
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+//** */
+
+// Trusted by
+  // References Carousel
+  const track = document.querySelector('.carousel-track');
+  const items = document.querySelectorAll('.carousel-item');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+  const refDotsContainer = document.querySelector('.carousel-dots');
+
+  let refCurrentIndex = 0;
+
+  // Create dots
+  items.forEach((_, i) => {
+    const dot = document.createElement('button');
+    if (i === 0) dot.classList.add('active');
+    refDotsContainer.appendChild(dot);
+    dot.addEventListener('click', () => moveToSlide(i));
+  });
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${refCurrentIndex * 100}%)`;
+    document.querySelectorAll('.carousel-dots button').forEach((dot, i) => {
+      dot.classList.toggle('active', i === refCurrentIndex);
+    });
+  }
+
+  function moveToSlide(index) {
+    refCurrentIndex = index;
+    updateCarousel();
+  }
+
+  prevBtn.addEventListener('click', () => {
+    refCurrentIndex = (refCurrentIndex - 1 + items.length) % items.length;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    refCurrentIndex = (refCurrentIndex + 1) % items.length;
+    updateCarousel();
+  });
+
+  // Auto-slide
+  setInterval(() => {
+    refCurrentIndex = (refCurrentIndex + 1) % items.length;
+    updateCarousel();
+  }, 4000);
+//** */
+
+
+//Contact Form Submitting 
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  console.log("Contact form submitted");
+
+  const formData = {
+    email: document.getElementById("email").value,
+    name: document.getElementById("name").value,
+    message: document.getElementById("message").value,
+    service: document.getElementById("service").value,
+    date: document.getElementById("date") ? document.getElementById("date").value : null,
+    phone: document.getElementById("phone") ? document.getElementById("phone").value : null
+  };
+
+  try {
+    const response = await fetch("https://formspree.io/f/mzdoaovq", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      alert("✅ Booking submitted successfully!");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("❌ Error submitting Booking.");
+    }
+  } catch (error) {
+    alert("⚠️ Network error. Please try again.");
+  }
+});
+//** */
+
+// Dark Mod Toggle
+const toggleBtn = document.getElementById("modeToggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "☀️ Light Mode";
+    localStorage.setItem("theme", "dark");
+  } else {
+    toggleBtn.textContent = "🌙 Dark Mode";
+    localStorage.setItem("theme", "light");
+  }
+});
+
+// Load saved preference
+window.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ Light Mode";
+  }
+});
+
+//** */
+
+  // Scroll to top button
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    // Show button only when user is near bottom
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  // Loader hide on page load
+  window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+  });
+
+  // Remove skeleton after loading
+  window.addEventListener("load", () => {
+    document.querySelectorAll('.skeleton').forEach(el => {
+      el.classList.remove('skeleton');
+    });
+  });
+
+
+</script>
+</body>
+</html>

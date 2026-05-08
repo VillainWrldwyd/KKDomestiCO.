@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KK Site Links | WELCOME TO OUR WORLD</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+:root {
+  --bg-gradient: linear-gradient(135deg, #4db6ac, #00897b, #e91e63, #fff59d);
+  --card-bg: #f9f9f9;
+  --text-color: #333;
+  --btn-bg: #4db6ac;
+  --btn-hover: #00897b;
+}
+
+body.dark-mode {
+  --bg-gradient: linear-gradient(135deg, #00695c, #004d40, #880e4f, #f57f17);
+  --card-bg: #2c2c2c;
+  --text-color: #eee;
+  --btn-bg: #00695c;
+  --btn-hover: #880e4f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}
+
+.kkCon, .hero {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.site {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.site:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.site img {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+.site h2 {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: #ffeb3b;
+}
+
+.site p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #eee;
+  background-color: #444;
+  border-radius: 18px;
+  padding: 0.3rem 0.6rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--btn-bg);
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: var(--btn-hover);
+  transform: scale(1.05);
+}
+/** */
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="logo">
+      <h3>WELCOME TO OUR WORLD!!!</h3>
+    </div>
+    <button id="modeToggle" class="toggle-btn"><i class="fas fa-moon"></i>Dark Mode</button>
+  </header>
+
+  <main>
+  <section class="kkCon" >
+    <div class ="main">
+
+    <div class="site">
+      <img src="KKClogo.jpeg" alt="KK Consulting Logo">
+        <h1>Welcome To</h1>
+        <h1>KK HR Consulting</h1>
+        <p>Labour & HR Consulting Services</p>
+    <a href="https://villainwrldwyd.github.io/KKconsultingHR/" class="btn">Visit KK Consulting</a>
+    </div>
+
+    <div class="site">
+        <img src="KKDlogo.png" alt="KK DomestiCO Logo">
+          <h1>Welcome To</h1>
+          <h1>KK DomestiCO.</h1>
+          <p>High-pitch Cleaning Services</p>
+      <a href="kokeDomSite.html" class="btn">Visit KKDomestiCO.</a>
+    </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Java Script-->
+<script>
+const toggleBtn = document.getElementById("modeToggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "☀️ Light Mode";
+    localStorage.setItem("theme", "dark");
+  } else {
+    toggleBtn.textContent = "🌙 Dark Mode";
+    localStorage.setItem("theme", "light");
+  }
+});
+
+// Load saved preference
+window.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ Light Mode";
+  }
+});
+
+
+</script>
+</body>
+</html>
